@@ -4,7 +4,7 @@ This project is a Proof of Concept (PoC) for a Flush+Reload software side-channe
 
 ## Project Structure
 
-`` 
+``` text
 ssa-assessment/
 ├── Makefile
 ├── README.md
@@ -19,7 +19,7 @@ ssa-assessment/
 │   └── shared_mem.h
 └── victim/
     └── victim.c
-``
+```   
 ## Files for Examiner
 
 - `victim/victim.c` -> Victim process
