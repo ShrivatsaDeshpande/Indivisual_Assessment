@@ -4,6 +4,7 @@ This project is a Proof of Concept (PoC) for a Flush+Reload software side-channe
 
 ## Project Structure
 
+`` 
 ssa-assessment/
 ├── Makefile
 ├── README.md
@@ -18,7 +19,7 @@ ssa-assessment/
 │   └── shared_mem.h
 └── victim/
     └── victim.c
-
+``
 ## Files for Examiner
 
 - `victim/victim.c` -> Victim process
@@ -98,20 +99,3 @@ cd ~/ssa-assessment
 
 - Results may vary based on hardware and timing precision.
 - A working example is acceptable even if the results are not perfect.
-
-
-
-
-sudo apt update
-sudo apt install -y build-essential gcc make libc6-dev manpages-dev gdb valgrind zip unzip
-
-cd ~
-mkdir -p ssa-assessment/{attacker,victim,shared,build,dist,docs/report,docs/screenshots}
-cd ssa-assessment
-
-
-make clean
-make
-
-./build/victim
-./build/attacker
